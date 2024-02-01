@@ -11,6 +11,8 @@ body {
     background-color: var(--primary-color);
     /* font-family: 'Caveat', cursive; */
     font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+
 }
 
 .app-container {
@@ -25,12 +27,12 @@ body {
 .app-container h1 {
     color: var(--fourth-color);
     font-size: 3rem;
-    text-align: center;
 }
 
 form {
+    display: flex;
+    justify-content: center;
     margin: auto;
-    text-align: center;
 }
 
 form input {
@@ -43,7 +45,7 @@ form input {
 
 .input-topic {
     color: var(--fourth-color);
-    width: 260px;
+    width: 40%;
 }
 
 .input-topic:focus {
@@ -51,7 +53,7 @@ form input {
     outline: none;
 }
 
-.input-submit {
+.submit-button {
     background-color: var(--fourth-color);
     border: none;
     color: var(--third-color);
@@ -59,7 +61,7 @@ form input {
     transition: all 0.4s ease-in-out;
 }
 
-.input-submit:hover {
+.submit-button:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
