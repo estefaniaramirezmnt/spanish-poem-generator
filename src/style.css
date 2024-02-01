@@ -1,5 +1,65 @@
+:root {
+    /* --primary-color: rgb(238, 238, 238); */
+    --primary-color: rgb(255, 243, 207);
+    --secondary-color: rgb(232, 200, 114);
+    --third-color: rgb(201, 215, 221);
+    --fourth-color: rgb(99, 122, 159);
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 body {
-    text-align: center;
+    background-color: var(--primary-color);
     /* font-family: 'Caveat', cursive; */
     font-family: 'Comfortaa', sans-serif;
+}
+
+.app-container {
+    background-color: var(--third-color);
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    margin: 60px auto;
+    max-width: 60%;
+    padding: 20px;
+}
+
+.app-container h1 {
+    color: var(--fourth-color);
+    font-size: 3rem;
+    text-align: center;
+}
+
+form {
+    margin: auto;
+    text-align: center;
+}
+
+form input {
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0px 10px;
+    padding: 10px 20px;
+}
+
+.input-topic {
+    color: var(--fourth-color);
+    width: 260px;
+}
+
+.input-topic:focus {
+    border-color: var(--fourth-color);
+    outline: none;
+}
+
+.input-submit {
+    background-color: var(--fourth-color);
+    border: none;
+    color: var(--third-color);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.input-submit:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
