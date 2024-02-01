@@ -11,6 +11,11 @@
     <meta name=" description" property="og:description"
         content="Spanish poem generator, built with HTML and vanilla JavaScript and using SheCodes Artificial Intelligence">
     <meta name="author" content="Nia Ramírez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>AI Poem Generator</title>
     <link rel="stylesheet" href="src/style.css">
 </head>
@@ -21,19 +26,9 @@
     </header>
     <main>
         <form>
-            <input 
-                type="text" 
-                placeholder="Enter the topic of your poem" 
-                id="topic" 
-                autofocus 
-                required
-                autocomplete="off"
-            >
-            <input 
-                type="submit" 
-                value="Generate" 
-                id="generate"
-            >
+            <input type="text" placeholder="Enter the topic of your poem" id="topic" autofocus required
+                autocomplete="off">
+            <input type="submit" value="Generate" id="generate">
         </form>
         <div class="poem-container">
             <p id="poem">Poem here</p>
