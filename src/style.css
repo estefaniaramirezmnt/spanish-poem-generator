@@ -73,7 +73,7 @@ form input {
 }
 
 .poem-container {
-    background-color: var(--fourth-color);
+    background-color: var(--primary-color);
     border-left: 3px solid var(--third-color);
     border-radius: 5px;
     box-shadow: var(--box-shadow);
@@ -90,7 +90,7 @@ form input {
 }
 
 .poem-container p {
-    color: var(--secondary-color);
+    color: var(--fourth-color);
     font-size: 1.3rem;
     font-weight: 600;
     margin: 10px;
