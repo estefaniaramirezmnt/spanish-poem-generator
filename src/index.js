@@ -1,15 +1,28 @@
-function generatePoem(event) {
-  event.preventDefault();
+function displayPoem(response) {
+  console.log("poem generated");
   new Typewriter("#poem", {
-    strings:
-      `Volverán las oscuras golondrinas en tu balcón sus nidos a colgar, 
-      y otra vez con el ala a sus cristales jugando llamarán; 
-      pero aquellas que el vuelo refrenaban tu hermosura y mi dicha a contemplar, 
-      aquellas que aprendieron nuestros nombres... ¡esas... no volverán!`,
+    strings: response.data.answer,
     autoStart: true,
     delay: 30,
-    cursor: "",
   });
+}
+
+function generatePoem(event) {
+  event.preventDefault();
+
+  let instructionsInput = document.getElementById("user-instructions");
+
+  let apiKey = "4efbbf43t600f8b07428238a0a4o0852";
+  let context =
+    "You are a romantic poem enthusiast and love to writte short poems. Your task is to write a 4 line and separate the 3 first lines with a HTML <br/>. Make sure to follow the user instructions.";
+  let prompt = `User instructions are: Generate a Spanish poem about: ${instructionsInput.value}`;
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  console.log("generating poem");
+  console.log(`Prompt is ${prompt}`);
+  console.log(`Context is ${context}`);
+
+  axios.get(apiUrl).then(displayPoem);
 }
 
 let poemFormElement = document.getElementById("poem-generator-form");

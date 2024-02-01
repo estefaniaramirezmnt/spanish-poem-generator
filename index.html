@@ -16,6 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Poem Generator</title>
     <link rel="stylesheet" href="src/style.css">
@@ -29,8 +30,8 @@
         </header>
         <main>
             <form id="poem-generator-form">
-                <input type="text" placeholder="Enter the topic of your poem" id="topic" autofocus required
-                    autocomplete="off" class="input-topic">
+                <input type="text" placeholder="Enter the topic of your poem" autofocus required
+                    autocomplete="off" class="input-topic" id="user-instructions">
                 <input type="submit" value="Generate" id="generate" class="submit-button">
             </form>
             <div class="poem-container">
