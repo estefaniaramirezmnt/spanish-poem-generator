@@ -1,8 +1,8 @@
 :root {
-    --primary-color: rgb(249, 245, 240);
-    --secondary-color: rgb(242, 234, 211);
-    --third-color: rgb(244, 153, 26);
-    --fourth-color: rgb(50, 19, 19);
+    --primary-color: rgb(255, 244, 244);
+    --secondary-color: rgb(247, 230, 196);
+    --third-color: rgb(241, 195, 118);
+    --fourth-color: rgb(96, 108, 93);
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -105,6 +105,7 @@ footer {
 footer a,
 footer a:visited {
     color: var(--third-color);
+    font-weight: 800;
 }
 
 footer a:hover {
