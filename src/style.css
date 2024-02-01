@@ -36,26 +36,28 @@ form {
 }
 
 form input {
-    border-radius: 5px;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
     font-size: 1.2em;
     font-weight: 500;
     margin: 0px 10px;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 
 .input-topic {
+    border: 1px solid var(--third-color);
     color: var(--fourth-color);
     width: 40%;
 }
 
 .input-topic:focus {
-    border-color: var(--fourth-color);
+    border: 1px solid var(--fourth-color);
     outline: none;
 }
 
 .submit-button {
     background-color: var(--fourth-color);
-    border: none;
+    border: 1px solid var(--fourth-color);
     color: var(--third-color);
     cursor: pointer;
     transition: all 0.4s ease-in-out;
@@ -63,5 +65,6 @@ form input {
 
 .submit-button:hover {
     background-color: var(--secondary-color);
+    border: 1px solid var(--secnndary-color);
     color: var(--primary-color);
 }
