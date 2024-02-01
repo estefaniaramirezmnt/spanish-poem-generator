@@ -16,6 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Poem Generator</title>
     <link rel="stylesheet" href="src/style.css">
 </head>
@@ -27,21 +28,22 @@
             <h1>Spanish Poem Generator</h1>
         </header>
         <main>
-            <form>
+            <form id="poem-generator-form">
                 <input type="text" placeholder="Enter the topic of your poem" id="topic" autofocus required
                     autocomplete="off" class="input-topic">
                 <input type="submit" value="Generate" id="generate" class="submit-button">
             </form>
             <div class="poem-container">
-                <h3>Your poem</h3>
-                <p id="poem">
+                <!-- <h3>Your poem</h3> -->
+                <!-- <p id="poem">
                     No hay extensión más grande que mi herida, </br>
                     lloro mi desventura y sus conjuntos</br>
                     y siento más tu muerte que mi vida.</br>
                     </br>
                     Ando sobre rastrojos de difuntos,</br>
                     y sin calor de nadie y sin consuelo</br>
-                    voy de mi corazón a mis asuntos.</p>
+                    voy de mi corazón a mis asuntos.</p> -->
+                <p class="poem" id="poem"></p>
             </div>
         </main>
         <footer>
@@ -53,7 +55,7 @@
         </footer>
     </div>
 
-    <script src="js/index.js"></script>
+    <script src="src/index.js"></script>
 </body>
 
 </html>
