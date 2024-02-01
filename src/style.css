@@ -1,9 +1,8 @@
 :root {
-    /* --primary-color: rgb(238, 238, 238); */
-    --primary-color: rgb(255, 243, 207);
-    --secondary-color: rgb(232, 200, 114);
-    --third-color: rgb(201, 215, 221);
-    --fourth-color: rgb(99, 122, 159);
+    --primary-color: rgb(249, 245, 240);
+    --secondary-color: rgb(242, 234, 211);
+    --third-color: rgb(244, 153, 26);
+    --fourth-color: rgb(50, 19, 19);
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -15,21 +14,20 @@ body {
 }
 
 .app-container {
-    background-color: var(--third-color);
-    border-radius: 15px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
     box-shadow: var(--box-shadow);
     margin: 60px auto;
-    max-width: 60%;
+    max-width: 600px;
     padding: 20px;
 }
 
 .app-container h1 {
-    color: var(--fourth-color);
-    font-size: 2.6rem;
+    color: var(--third-color);
+    font-size: 1.8rem;
 }
 
 form {
-    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     margin: auto;
@@ -37,16 +35,17 @@ form {
 }
 
 form input {
-    border-radius: 20px;
+    border-radius: 25px;
     box-shadow: var(--box-shadow);
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 500;
     margin: 0px 10px;
-    padding: 15px 20px;
+    padding: 15px;
 }
 
 .input-topic {
-    border: 1px solid var(--third-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
     width: 90%;
 }
 
@@ -55,28 +54,28 @@ form input {
 }
 
 .input-topic:focus {
-    border: 1px solid var(--fourth-color);
+    border: 1px solid var(--third-color);
     outline: none;
 }
 
 .submit-button {
     background-color: var(--fourth-color);
     border: 1px solid var(--fourth-color);
-    color: var(--third-color);
+    color: var(--secondary-color);
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
 
 .submit-button:hover {
-    background-color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
+    background-color: var(--third-color);
+    border: 1px solid var(--third-color);
     color: var(--primary-color);
 }
 
 .poem-container {
-    background-color: rgba(99, 122, 159, 0.9);
-    border-left: 3px solid var(--secondary-color);
-    border-radius: 15px;
+    background-color: var(--fourth-color);
+    border-left: 3px solid var(--third-color);
+    border-radius: 5px;
     box-shadow: var(--box-shadow);
     font-family: 'Caveat', cursive;
     margin: 30px auto;
@@ -86,28 +85,28 @@ form input {
 
 .poem-container h3 {
     color: var(--third-color);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin: 10px;
 }
 
 .poem-container p {
     color: var(--secondary-color);
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-weight: 600;
     margin: 10px;
 }
 
 footer {
     color: var(--fourth-color);
-    font-size: 1rem;
+    font-size: 0.7rem;
     margin-top: 15px;
 }
 
 footer a,
 footer a:visited {
-    color: var(--fourth-color);
+    color: var(--third-color);
 }
 
 footer a:hover {
-    color: var(--primary-color);
+    color: var(--fourth-color);
 }
