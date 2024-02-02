@@ -77,7 +77,6 @@ form input {
     font-size: 0.8rem;
     margin: 10px auto;
     max-width: 80%;
-
 }
 
 .hint {
@@ -157,6 +156,40 @@ footer a:hover {
     }
 
     form {
-        max-width: 900%;
+        max-width: 100%;
+    }
+
+    form input {
+        font-size: 0.6em;
+        padding: 10px;
+    }
+
+    .tips-for-user {
+        font-size: 0.6rem;
+        max-width: 100%;
+    }
+
+    .poem {
+        max-width: 80%;
+    }
+
+    .poem h3 {
+        font-size: 0.9rem;
+    }
+    
+    .poem p {
+        font-size: 1.1rem;
+    }
+
+    .generating,
+    footer {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 380px) {
+    
+    form input {
+        margin: 0px 5px;
     }
 }
