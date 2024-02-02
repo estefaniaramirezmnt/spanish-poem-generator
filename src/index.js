@@ -27,9 +27,6 @@ function generatePoem(event) {
 
   axios.get(apiUrl)
   .then(displayPoem)
-  .catch((error) => {
-    poemElement.innerHTML = "An error occurred while generating the poem. Please try again.";
-  });
 }
 
 let poemFormElement = document.getElementById("poem-generator-form");
