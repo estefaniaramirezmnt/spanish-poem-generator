@@ -34,7 +34,7 @@ form {
 }
 
 form input {
-    border-radius: 25px;
+    border-radius: 5px;
     box-shadow: var(--box-shadow);
     font-family: 'Comfortaa', sans-serif;
     font-size: 0.8em;
@@ -70,6 +70,20 @@ form input {
     background-color: var(--third-color);
     border: 1px solid var(--third-color);
     color: var(--primary-color);
+}
+
+.tips-for-user {
+    color: var(--fourth-color);
+    font-size: 0.8rem;
+    margin: 10px auto;
+    max-width: 80%;
+
+}
+
+.hint {
+    display: block;
+    margin-left: 10px;
+    text-align: left;
 }
 
 .poem-container {
