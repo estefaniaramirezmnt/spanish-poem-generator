@@ -13,11 +13,7 @@ function generatePoem(event) {
 
   let apiKey = "4efbbf43t600f8b07428238a0a4o0852";
   let context =
-    `You are a romantic poem enthusiast and love to writte poems. 
-    Your task is to write a 4 line poem, separating the 3 first lines with a HTML <br/>. Don't add a break at the end of the last line.
-    Don't write the first letter of each line in uppercase, but write the first letter of the first word of the poem in uppercase.
-    Add a title inside a <h3> element saying "Your poem".
-    Make sure to follow the user instructions.`;
+    `You are a romantic poem enthusiast and love to writte poems. Your task is to write a 4 line poem, separating the 3 first lines with a HTML <br/>. Don't add a break at the end of the last line. Don't write the first letter of each line in uppercase, but write the first letter of the first word of the poem in uppercase. Add a title inside a <h3> element saying "Your poem". Make sure to follow the user instructions.`;
   let prompt = `User instructions are: Generate a Spanish poem about: ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
@@ -26,7 +22,10 @@ function generatePoem(event) {
   poemElement.innerHTML = `<div class="generating">⏳ Generating a poem for you about ${instructionsInput.value}...</div>`
 
   axios.get(apiUrl)
-  .then(displayPoem)
+  .then(displayPoem).
+  catch(function (error) {
+    poemElement.innerHTML = "An error occurred while generating the poem. Please try again.";
+  });
 }
 
 let poemFormElement = document.getElementById("poem-generator-form");
