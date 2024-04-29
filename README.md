@@ -6,7 +6,7 @@ This project is a Spanish poem generator powered by AI, developed as a final pro
 ## Motivation
 The goal of this project is to explore the intersection of artificial intelligence and creative expression in the realm of Spanish poetry.
 ## Features
-- AI-driven poem generation
+- AI-driven poem generator
 - Customization options for poem style and length
   
 ## Demo
